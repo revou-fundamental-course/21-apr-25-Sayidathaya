@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Suhu</h1>
+        <p>Konversi suhu Celsius &harr; Fahrenheit!</p>
+    </header>
+    <main>
+        <form id="tempForm">
+            <label for="inputSuhu">Masukkan suhu:</label>
+            <input type="number" id="inputSuhu" name="inputSuhu" placeholder="Derajat" required>
+            <select id="inputTipe" name="inputTipe">
+                <option value="cToF">Celsius ke Fahrenheit</option>
+                <option value="fToC">Fahrenheit ke Celsius</option>
+            </select>
+            <div class="button-group">
+                <button type="submit" id="btnKonversi">Konversi</button>
+                <button type="button" id="btnReset">Reset</button>
+                <button type="button" id="btnReverse">Reverse</button>
+            </div>
+        </form>
+        <section id="hasilSection">
+            <h2>Hasil Konversi:</h2>
+            <div id="hasilKonversi">-</div>
+            <div id="penjelasanKonversi"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kalkulator Suhu</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
